@@ -1,51 +1,22 @@
 import './App.css';
-import Testimonio from './components/Testimonio';
-<styles></styles>
+import Dogs from './components/Dogs';
+import perro1 from './assets/img/perro1.jpg';
+import perro2 from './assets/img/perro2.jpg';
+import perro3 from './assets/img/perro3.jpg';
+import perro4 from './assets/img/perro4.jpg';
+
 function App() {
   return (
     <div className="App">
-      <h1>Esto es lo que dicen nuestros alumnos sobre freeCodeCamp</h1>
-        <Testimonio
-          nombre='Emma Bostian'
-          pais='Suecia'
-          imagen='Emma'
-          cargo='Ingeniera de Software'
-          empresa='Spotify'
-          testimonio='Siempre he tenido problemas para aprender JavaScript. He tomado muchos cursos, pero el curso de freeCodeCamp fue el que se quedó. Estudiar JavaScript, así como estructuras de datos y algoritmos en freeCodeCamp me dio las habilidades y la confianza que necesitaba para conseguir el trabajo de mis sueños como ingeniero de software en Spotify.'
-        />
-        <Testimonio
-          nombre='Shawn Wang'
-          pais='Singapur'
-          imagen='Shawn'
-          cargo='Ingeniero de Software'
-          empresa='Amazon'
-          testimonio='Da miedo cambiar de carrera. Solo gané la confianza de que podía programar trabajando a través de los cientos de horas de lecciones gratuitas en freeCodeCamp. Dentro de un año tuve un trabajo de seis cifras como ingeniero de software. freeCodeCamp cambió mi vida.'
-        />
-        <Testimonio
-          nombre='Sarah Chima'
-          pais='Nigeria'
-          imagen='Sarah'
-          cargo='Ingeniera de Software'
-          empresa='ChatDesk'
-          testimonio='freeCodeCamp fue la puerta de entrada a mi carrera como desarrolladora de software. El plan de estudios bien estructurado llevó mis conocimientos de codificación desde un nivel de principiante total hasta un nivel muy seguro. Era todo lo que necesitaba para conseguir mi primer trabajo como desarrolladora en una empresa increíble.'
-        />
-         <Testimonio
-          nombre='Sarah Chima'
-          pais='Nigeria'
-          imagen='Sarah'
-          cargo='Ingeniera de Software'
-          empresa='ChatDesk'
-          testimonio='freeCodeCamp fue la puerta de entrada a mi carrera como desarrolladora de software. El plan de estudios bien estructurado llevó mis conocimientos de codificación desde un nivel de principiante total hasta un nivel muy seguro. Era todo lo que necesitaba para conseguir mi primer trabajo como desarrolladora en una empresa increíble.'
-        />
-         <Testimonio
-          nombre='Sarah Chima'
-          pais='Nigeria'
-          imagen='Sarah'
-          cargo='Ingeniera de Software'
-          empresa='ChatDesk'
-          testimonio='freeCodeCamp fue la puerta de entrada a mi carrera como desarrolladora de software. El plan de estudios bien estructurado llevó mis conocimientos de codificación desde un nivel de principiante total hasta un nivel muy seguro. Era todo lo que necesitaba para conseguir mi primer trabajo como desarrolladora en una empresa increíble.'
-        />
+      <h1>Perros disponibles</h1>
+      <div style={{display: 'flex', gap: 20, flexWrap: 'wrap', justifyContent: 'center'}}>
+        <Dogs nombre='Firulais' raza='Labrador' edad='3 años' descripcion='Muy juguetón y cariñoso.' imagen={perro1} />
+        <Dogs nombre='Luna' raza='Pastor' edad='2 años' descripcion='Le encanta correr.' imagen={perro2} />
+        <Dogs nombre='Max' raza='Beagle' edad='4 años' descripcion='Tranquilo y obediente.' imagen={perro3} />
+        <Dogs nombre='Nala' raza='Bulldog' edad='1 año' descripcion='Ideal para familia.' imagen={perro4} />
       </div>
+    </div>
   );
 }
+
 export default App;
